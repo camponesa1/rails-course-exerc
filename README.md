@@ -1,1 +1,4 @@
 # rails-course-exerc
+
+# Hello!
+
