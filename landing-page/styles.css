@@ -53,7 +53,6 @@ body{
 
 #section-a {
   padding:30px;
-  background:darkgreen;
   color:#fff;
   text-align:center;
 }
@@ -117,7 +116,7 @@ body{
 }
 #section-c {
   padding:20px;
-  background:orange;
+  background:lightorange;
   text-align: center;
   font-size:20px;
 }
