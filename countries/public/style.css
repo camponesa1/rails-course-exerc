@@ -1,0 +1,16 @@
+
+
+h1 {
+    text-align: center;
+}
+a {
+    display: inline-block;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 20px;
+}
+.footer {
+    text-align: center;
+}
