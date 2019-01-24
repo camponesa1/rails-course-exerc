@@ -13,7 +13,7 @@
 ActiveRecord::Schema.define(version: 2019_01_22_024650) do
 
   create_table "questions", force: :cascade do |t|
-    t.string "questions"
+    t.string "question"
     t.string "answer"
     t.string "flag"
   end
