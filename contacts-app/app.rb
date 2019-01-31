@@ -61,7 +61,7 @@ end
 post '/contacts/search' do
     
      query = "%#{params[:query]}%"
-      @contact = Contact.where("last_name Like? OR first_name Like?", query, query) 
+      @contact = Contact.where("first_name Like? OR last_name Like?", query, query) 
          @contact.each do |q|
          q.first_name 
          q.last_name 
