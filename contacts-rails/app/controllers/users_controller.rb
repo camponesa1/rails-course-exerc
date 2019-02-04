@@ -48,5 +48,12 @@ class UsersController < ApplicationController
         redirect_to '/users'
     end
     
+    def search
+        query = "%#{params[:query]}%"
+        @user = User.where("first_name Like? OR last_name Like?", query, query)
+        redirect_to '/users'
+    
+    end
+    
     
 end
