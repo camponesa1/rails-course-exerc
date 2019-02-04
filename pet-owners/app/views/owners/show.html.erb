@@ -1,0 +1,11 @@
+
+
+<h4><%= @owner.first_name %><%= @owner.last_name %></h4>
+
+<h3>Pets:</h3>
+
+<% @owner.pets.each do |pet| %>
+<div>
+    <%= pet.name %> <%= pet.description %>
+</div>
+<% end %>

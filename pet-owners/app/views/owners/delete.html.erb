@@ -1,0 +1,6 @@
+<form action="/owners/delete" method="post">
+    <input type="hidden" name="id" value="<%= @owner.id %>">
+    <input type="text" name="first_name" value= "<%= @owner.first_name %>"  placeholder="First Name">
+    <input type="text" name="last_name" value= "<%= @owner.last_name %>" placeholder="Last Name">
+    <input type="submit" value="Delete">
+ </form>

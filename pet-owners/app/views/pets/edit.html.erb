@@ -1,0 +1,6 @@
+<form action="/pets/edit" method="post">
+    <input type="hidden" name="id" value="<%= @pet.id %>">
+    <input type="text" name="name" value= "<%= @pet.name %>"  placeholder="Name">
+    <input type="text" name="description" value= "<%= @pet.description %>" placeholder="Description">
+    <input type="submit" value="Save">
+ </form>
