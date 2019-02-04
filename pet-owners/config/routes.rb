@@ -5,9 +5,12 @@ Rails.application.routes.draw do
   get '/owners' => 'owners#index'
   get '/owners/edit' => 'owners#edit'
   post '/owners/edit' => 'owners#update'
+  
   get '/owners/delete' => 'onwers#delete'
   post '/owners/delete' => 'owners#index'
+  
   get '/owners/show' => 'owners#show'
+  
   
   get '/pets/new' => 'pets#new'
   post '/pets' => 'pets#create'
