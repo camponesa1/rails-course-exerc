@@ -30,5 +30,8 @@ class PetsController < ApplicationController
     end
     
     def delete
+        pet = Pet.find(params[:id])
+        pet.destroy
+        redirect_to '/pets'
     end
 end
