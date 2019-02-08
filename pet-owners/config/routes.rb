@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   get '/owners/edit' => 'owners#edit'
   post '/owners/edit' => 'owners#update'
   
-  get '/owners/delete' => 'onwers#delete'
+  get '/owners/delete' => 'owners#delete'
   post '/owners/delete' => 'owners#index'
   
   get '/owners/show' => 'owners#show'
