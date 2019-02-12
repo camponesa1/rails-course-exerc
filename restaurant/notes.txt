@@ -1,0 +1,19 @@
+# Restaurant Order System
+- setup login system (devise)
+
+-dishes CRUD
+
+-create an order (customer view)
+-show order (customer view)
+-list orders (customer view)
+
+-show all orders (restaurant view)
+-update order lifecycle (restaurant view)
+
+#Order Lifecycle
+-order is created
+-order is submitted
+-order is being prepared
+-order is out for delivery
+-order is delivered
+
