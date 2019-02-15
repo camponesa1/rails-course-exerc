@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Lessons</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Student Name</th>
+      <th>Lesson type</th>
+      <th>Student Goal</th>
+      <th>Start time</th>
+      <th>Status</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @meetings.each do |meeting| %>
+      <tr>
+        <td><%= meeting.student_name %></td>
+        <td><%= meeting.lesson_type %></td>
+        <td><%= meeting.student_goal %></td>
+        <td><%= meeting.start_time %></td>
+        <td><%= meeting.status %></td>
+        <td><%= link_to 'Show', meeting %></td>
+        <td><%= link_to 'Edit', edit_meeting_path(meeting) %></td>
+        <td><%= link_to 'Destroy', meeting, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Schedule a lesson', new_meeting_path %>
