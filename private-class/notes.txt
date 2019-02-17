@@ -1,0 +1,29 @@
+private-class application
+
+Tables:
+#users (rails g devise:model User - User user_path)
+-email
+-password
+-first_name
+-last_name
+-phone
+-creditcard_info
+-created_at
+(partial CRUD just edit, update user, updating current_user)
+
+#tutor (rails g devise:model Tutor - User tutor_path)
+-email
+-password
+-first_name
+-last_name
+-phone
+(partial CRUD too, just edit, update tutor, current_tutor)
+
+#lesson
+-user_id
+-tutor_id
+-lesson_type
+-student_goal
+-start_time
+-end_time
+-status (cycle:scheduled,given,rescheduled) --> tutor view for change this cycle

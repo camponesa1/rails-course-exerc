@@ -1,0 +1,27 @@
+<%= form_for @lesson do |f| %>
+<div>
+    <%= f.text_field :child_name, placeholder: 'Student Name' %>
+</div>
+<div>
+    <%= f.label :lesson_type, 'Lesson Type'%>
+        <select>      
+           <option value="math">Math</option>
+           <option value="science">Science</option>
+        </select>
+</div>
+<div>
+    <%= f.text_area :student_goal, placeholder: 'Student Goal' %>
+</div>
+<div>
+    <%= f.time_field :start_time, placeholder: 'Start Time' %>
+</div>
+<div>
+    <%= f.time_field :end_time, placeholder: 'End Time' %>
+</div>
+<div>
+    <%= f.datetime_local_field :created_at, placeholder: 'Created at' %>
+</div>
+
+<%= f.submit 'Save' %>
+<% end %>
+
