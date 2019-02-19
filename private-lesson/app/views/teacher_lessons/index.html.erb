@@ -1,0 +1,25 @@
+<% @lessons.each do |lesson| %>
+    <div class="row">
+        <div class="col-2">
+            <%= lesson.status %>
+        </div>
+        <div class="col-6">
+             <%= lesson.lesson_level %>
+             <%= lesson.student_goal %>
+             <%= lesson.date %>
+             <%= lesson.start_time %>
+             <%= lesson.end_time %>
+            
+        </div>
+        
+        <div class="col-2">
+            <% if order.status == 'submitted' %>
+                <%= link_to 'Scheduled', , method: :put, class: 'btn btn-sm btn-secondary' %>
+            <% else order.status == 'scheduled' %>
+                <%= link_to 'Given', (order), method: :put, class: 'btn btn-sm btn-secondary' %>
+            <% end %>
+        </div>
+    </div>
+    
+    
+<% end %>

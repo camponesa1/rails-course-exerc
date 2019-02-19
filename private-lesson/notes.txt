@@ -1,0 +1,28 @@
+private-class application
+
+#Tables 
+
+-students
+    -(devise gem)
+    -first_name
+    -last_name
+    -phone
+    -email
+    -password
+
+-lessons
+    -lesson_level
+    -student_goal
+    -date
+    -start_time
+    -end_time
+    -status
+
+
+-student_lessons
+    -student_id
+    -lesson_id
+
+The app idea is: 
+the student has to signup / loggin to be able to submit a lesson.
+the teacher can see all lessons and change the status lesson (from submitted to scheduled or given )

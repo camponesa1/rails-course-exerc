@@ -1,0 +1,14 @@
+
+<%= link_to 'New Lesson', new_lesson_path %>
+
+<h3>Your lessons:</h3>
+<% @lessons.each do |lesson| %>
+    <div>
+        <%= lesson.lesson_level %>
+        <%= lesson.student_goal %>
+        <%= lesson.date %>
+        <%= lesson.start_time %>
+        <%= lesson.end_time %>
+        <%= lesson.status %>
+    </div>
+<% end %>
