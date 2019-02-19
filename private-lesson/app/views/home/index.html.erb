@@ -1,0 +1,13 @@
+<h1>Welcome <%= current_student.email %> !</h1>
+<h1>Schedule a Portuguese Lesson today!</h1>
+
+
+<div>
+    <%= link_to 'New Lesson', new_lesson_path %>
+</div>
+
+
+<div>
+    <%= link_to 'Logout', destroy_student_session_path, method: :delete %>
+</div>
+
