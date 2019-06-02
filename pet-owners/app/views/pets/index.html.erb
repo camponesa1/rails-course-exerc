@@ -1,0 +1,16 @@
+<a href="/pets/new">New Pet</a>
+<p></p>
+<% @pets.each do |pet| %>
+<div>
+    <p>
+        <%= pet.name %> <%= pet.description %>
+    <a href="/pets/edit?id=<%= pet.id %>">Edit</a>
+    </p>
+    
+</div>
+<% end %>
+
+
+
+
+          

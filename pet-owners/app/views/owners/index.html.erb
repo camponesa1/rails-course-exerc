@@ -1,0 +1,19 @@
+<a href="/owners/new">New Owner</a>
+<p>
+    <h3>Pet Owners:</h3>
+</p>
+<% @owners.each do |o| %>
+    <div>
+        <p>
+          <a href="/owners/delete?id=<%= o.id %>">Delete</a>
+          <a href="/owners/edit?id=<%= o.id %>">Edit</a>
+          <a href="/owners/show?id=<%= o.id %>">Show</a>
+          <%= o.first_name %>
+          <%= o.last_name %>
+        </p>
+        
+        
+    </div>
+     
+    
+<% end %>
