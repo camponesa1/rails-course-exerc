@@ -1,0 +1,22 @@
+<form action="/users/search" method="get">
+    <input type="text" name="search"  placeholder="Search">
+    <input type="submit" value="Submit">
+    
+    <% @user.each do |user| %>
+<div>
+    <%= user.first_name %> 
+    <%= user.last_name %>
+    <%= user.phone %>
+    <%= user.email %>
+    <%= user.address %>
+    <%= user.city %>
+    <%= user.state %> 
+    <%= user.zip %>
+</div>
+    <% end %>
+</form>
+
+
+
+
+ 

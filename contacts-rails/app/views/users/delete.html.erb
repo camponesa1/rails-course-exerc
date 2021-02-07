@@ -1,0 +1,14 @@
+<form action="/users/delete" method="post">
+    <input type="hidden" name="id" value="<%= @user.id %>">
+    <input type="text" name="first_name" value= "<%= @user.first_name %>" placeholder="First Name">
+    <input type="text" name="last_name" value= "<%= @user.last_name %>" placeholder="Last Name">
+    <input type="text" name="phone" value= "<%= @user.phone %>" placeholder="Phone">
+    <input type="email" name="email" value= "<%= @user.email %>" placeholder="Email">
+    <input type="text" name="address" value= "<%= @user.address %>" placeholder="Address">
+    <input type="text" name="city" value= "<%= @user.city %>" placeholder="City">
+    <input type="text" name="state" value= "<%= @user.state %>" placeholder="State">
+    <input type="text" name="zip" value= "<%= @user.zip %>" placeholder="ZipCode">
+    <input type="submit" value="Delete">
+ </form>
+ 
+ 

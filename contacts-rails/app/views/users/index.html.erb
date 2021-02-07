@@ -1,0 +1,15 @@
+<a href="/users/new">New Contact</a>
+<% @users.each do |user| %>
+    <div>
+        <a href="/users/edit?id=<%= user.id %>">Edit</a>
+        <a href="/users/delete?id=<%= user.id %>">Delete</a>
+        <%= user.first_name %>
+        <%= user.last_name %>
+        <%= user.phone %>
+        <%= user.email %>
+        <%= user.address %>
+        <%= user.city %>
+        <%= user.state %>
+        <%= user.zip %>
+    </div>
+<% end %>
