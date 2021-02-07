@@ -1,0 +1,16 @@
+
+
+<a href="/contacts/new">New</a>
+<% @contacts.each do |q| %>
+    <div>
+        <a href="/contacts/edit?id=<%= q.id %>">Edit</a>
+        <%= q.first_name %>
+        <%= q.last_name %>
+        <%= q.phone %>
+        <%= q.email %>
+        <%= q.address %>
+        <%= q.city %>
+        <%= q.state %>
+        <%= q.zip %>
+    </div>
+<% end %>
